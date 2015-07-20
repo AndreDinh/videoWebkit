@@ -1,0 +1,22 @@
+@import config
+@import mixen
+.timeBar
+  z-index:10
+  width:0
+  background: #3FB7FC /* fallback */
+  @include background($timeBackgroundGradient)
+  @include box-shadow($box-shadow)
+  position: absolute
+  top: 0
+  left: 0
+  width: 0
+  height: 100%
+  background-color: #ccc
+
+/* time and duration */
+.time
+  width:15%
+  float:right
+  text-align:center
+  font-size:11px
+  line-height:12px

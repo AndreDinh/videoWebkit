@@ -1,0 +1,86 @@
+@import config
+@import mixen
+/*** VIDEO CONTROLS CSS ***/
+.control
+  background:#333
+  color:#ccc
+  bottom:0
+  left:0
+  width: 100%
+  z-index:5
+  display:none
+
+.topControl
+  height:11px
+  border-bottom: $borderType
+  padding:1px 5px
+  background: $backgroundColor /* fallback */
+  @include background($gradient)
+
+/* control bottom part */
+.btmControl
+  display:inline-block
+  clear: both
+  background: $backgroundColor /* fallback */
+  @include background($gradient)
+
+.control div.btn
+  float:left
+  width:$pixelsDimension
+  height:$pixelsDimension
+  padding:0 5px
+  border-right:$borderType
+  cursor:pointer
+
+.control div.text
+  font-size:12px
+  font-weight:bold
+  line-height:$pixelsDimension
+  text-align:center
+  font-family:verdana
+  width:20px
+  border:none
+  color:#777
+
+.control div.btnPlay
+  background: $backgroundURl 0 0
+  border-left: $borderType
+
+.control div.paused
+  background: $backgroundURl 0 -30px
+
+.control div.btnStop
+  background: $backgroundURl 0 -60px
+
+.control div.spdText
+  border:none
+  font-size:14px
+  line-height:30px
+  font-style:italic
+
+.control div.selected
+  font-size:15px
+  color:#ccc
+
+.control div.sound
+  background:$backgroundURl -88px -30px
+  border:none
+  float:right
+
+.control div.sound2
+  background:$backgroundURl -88px -60px !important
+
+.control div.muted
+  background:$backgroundURl -88px 0 !important
+
+.control div.btnFS
+  background:$backgroundURl -44px 0
+  float:right
+
+.control div.btnLight
+  background:$backgroundURl -44px -60px
+  border-left:1px solid #404040
+  float:right
+
+.control div.lighton
+  background:$backgroundURl -44px -30px !important

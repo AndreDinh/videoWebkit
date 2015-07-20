@@ -1,0 +1,39 @@
+@import config
+@import mixen
+
+/* Progress bar */
+.progress
+  width:85%
+  height:$borderRadius
+  position:relative
+  float:left
+  cursor:pointer
+  background: #444 /* fallback */
+  @include background($progressGradients)
+  box-shadow:0 2px 3px #333 inset
+  -moz-box-shadow:0 2px 3px #333 inset
+  -webkit-box-shadow:0 2px 3px #333 inset
+  @include borderRadius($borderRadius)
+
+.progress span
+  height:100%
+  position:absolute
+  top:0
+  left:0
+  display:block
+  @include borderRadius($borderRadius)
+
+.bufferBar
+  z-index:5
+  width:0
+  background: #777
+  @include background($bufferBar)
+  box-shadow:2px 0 5px #333
+  -moz-box-shadow:2px 0 5px #333
+  -webkit-box-shadow:2px 0 5px #333
+
+.progressBar
+    position: relative
+    width: 100%
+    height: $borderRadius
+    backgroud-color: #000
